@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Git & GitHub Commands</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Git & GitHub Commands</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search commands..." />
+      <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#advanced">Advanced</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="basics">
+      <h2>Basic Commands</h2>
+      <div class="command-container">
+        <!-- Basic Cards -->
+        <div class="command-card" data-command="git init" data-description="Initialize a new Git repository.">
+          <h3><i class="fas fa-code-branch"></i> git init</h3>
+          <p>Initialize a new Git repository.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git clone" data-description="Clone a repository into a new directory.">
+          <h3><i class="fas fa-clone"></i> git clone</h3>
+          <p>Clone a repository into a new directory.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git add" data-description="Add file contents to the index (staging area).">
+          <h3><i class="fas fa-plus-square"></i> git add</h3>
+          <p>Add file contents to the index.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git commit" data-description="Record changes to the repository.">
+          <h3><i class="fas fa-pen"></i> git commit</h3>
+          <p>Record changes to the repository.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git push" data-description="Update remote refs along with associated objects.">
+          <h3><i class="fas fa-upload"></i> git push</h3>
+          <p>Push changes to a remote repository.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="advanced">
+      <h2>Advanced Commands</h2>
+      <div class="command-container">
+        <!-- Advanced Cards -->
+        <div class="command-card" data-command="git rebase" data-description="Reapply commits on top of another base tip.">
+          <h3><i class="fas fa-sync-alt"></i> git rebase</h3>
+          <p>Reapply commits on top of another base tip.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git cherry-pick" data-description="Apply changes introduced by some commits.">
+          <h3><i class="fas fa-check-square"></i> git cherry-pick</h3>
+          <p>Apply changes from selected commits.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git stash" data-description="Stash the changes in a dirty working directory.">
+          <h3><i class="fas fa-archive"></i> git stash</h3>
+          <p>Stash changes in a dirty working directory.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git merge" data-description="Join two or more development histories.">
+          <h3><i class="fas fa-compress-arrows-alt"></i> git merge</h3>
+          <p>Join two or more development histories.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="command-card" data-command="git reset" data-description="Reset current HEAD to the specified state.">
+          <h3><i class="fas fa-undo"></i> git reset</h3>
+          <p>Reset current HEAD to the specified state.</p>
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Git & GitHub Commands. Built for developers.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
