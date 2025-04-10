@@ -41,3 +41,12 @@ Perfect for beginners and advanced users to refresh and level up their Git skill
 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/git-github-commands.git
+
+   🙌 Acknowledgements
+Inspired by the power of Git & GitHub 💻
+
+Thanks to Font Awesome for awesome icons
+
+Made with ❤️ by Awanit Raj
+
+
